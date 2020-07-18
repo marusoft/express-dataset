@@ -25,7 +25,7 @@ var addEvent =  (req, res) => {
 };
 
 
-var getEventByActor = (req, res) => {
+var getByActor = (req, res) => {
 	const {actorId} = req.params;
 	db.find({
 				"actor.id": Number(actorId)
